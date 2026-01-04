@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система видеонаблюдения</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Система видеонаблюдения</h1>
+        <img src="images/logo.png" alt="Логотип системы" class="logo">
+    </header>
+
+    <main>
+        <div class="camera-grid">
+            <div class="camera-card" id="camera-1">
+                <h3>Камера 1</h3>
+                <div class="video-container">
+                    <video id="video-1" controls></video>
+                    <div class="overlay">Нет сигнала</div>
+                </div>
+                <p class="status">Статус: offline</p>
+            </div>
+
+            <div class="camera-card" id="camera-2">
+                <h3>Камера 2</h3>
+                <div class="video-container">
+                    <video id="video-2" controls></video>
+                    <div class="overlay">Нет сигнала</div>
+                </div>
+                <p class="status">Статус: offline</p>
+            </div>
+
+            <div class="camera-card" id="camera-3">
+                <h3>Камера 3</h3>
+                <div class="video-container">
+                    <video id="video-3" controls></video>
+                    <div class="overlay">Нет сигнала</div>
+                </div>
+                <p class="status">Статус: offline</p>
+            </div>
+
+            <div class="camera-card" id="camera-4">
+                <h3>Камера 4</h3>
+                <div class="video-container">
+                    <video id="video-4" controls></video>
+                    <div class="overlay">Нет сигнала</div>
+                </div>
+                <p class="status">Статус: offline</p>
+            </div>
+        </div>
+
+        <button id="connect-all">Подключить все камеры</button>
+    </main>
+
+    <script src="js/cameras.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
